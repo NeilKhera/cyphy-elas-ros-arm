@@ -22,9 +22,6 @@ Street, Fifth Floor, Boston, MA 02110-1301, USA
 #ifndef __FILTER_H__
 #define __FILTER_H__
 
-#include <emmintrin.h>
-#include <pmmintrin.h>
-
 // define fixed-width datatypes for Visual Studio projects
 #ifndef _MSC_VER
   #include <stdint.h>
@@ -38,6 +35,7 @@ Street, Fifth Floor, Boston, MA 02110-1301, USA
   typedef unsigned __int32  uint32_t;
   typedef unsigned __int64  uint64_t;
 #endif
+#include "sse_to_neon.hpp"
 
 // fast filters: implements 3x3 and 5x5 sobel filters and 
 //               5x5 blob and corner filters based on SSE2/3 instructions

@@ -24,6 +24,7 @@ Street, Fifth Floor, Boston, MA 02110-1301, USA
 #include <cassert>
 
 #include "filter.h"
+#include "sse_to_neon.hpp"
 
 // define fixed-width datatypes for Visual Studio projects
 #ifndef _MSC_VER

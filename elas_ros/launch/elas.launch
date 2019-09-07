@@ -5,13 +5,13 @@
     <arg name="elas_ns" default="elas"/>
     
     <!-- If you already have rectified camera images remove the image_proc nodes -->
-    <group ns="$(arg stereo)/left">
+    <!-- <group ns="$(arg stereo)/left">
         <node name="left_rect" pkg="image_proc" type="image_proc"/>
     </group>
     
     <group ns="$(arg stereo)/right">
         <node name="right_rect" pkg="image_proc" type="image_proc"/>
-    </group>
+    </group> -->
 
     <!-- This node actually does the stereo reconstruction -->
     <node name="$(arg elas_ns)" pkg="elas_ros" type="elas_ros" output="screen">
@@ -43,6 +43,6 @@
         <param name="subsampling" type="bool" value="0"/>
 
         <!-- If your cameras are not synchronised then uncomment the following line -->
-        <!-- <param name="approximate_sync" value="true" type="bool"/> -->
+        <param name="approximate_sync" value="true" type="bool"/>
     </node>
 </launch>

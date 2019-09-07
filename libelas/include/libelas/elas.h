@@ -29,7 +29,7 @@ Street, Fifth Floor, Boston, MA 02110-1301, USA
 #include <string.h>
 #include <stdlib.h>
 #include <vector>
-#include <emmintrin.h>
+#include "sse_to_neon.hpp"
 
 // define fixed-width datatypes for Visual Studio projects
 #ifndef _MSC_VER

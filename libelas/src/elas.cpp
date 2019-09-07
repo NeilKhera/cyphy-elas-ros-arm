@@ -25,6 +25,7 @@ Street, Fifth Floor, Boston, MA 02110-1301, USA
 #include "descriptor.h"
 #include "triangle.h"
 #include "matrix.h"
+#include "sse_to_neon.hpp"
 
 using namespace std;
 

@@ -30,8 +30,6 @@ generate_messages(
     sensor_msgs
 )
 
-add_definitions(-msse3)
-
 include_directories(src ${libelas_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 include_directories(${Boost_INCLUDE_DIRS})
 
