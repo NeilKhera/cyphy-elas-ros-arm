@@ -8,7 +8,7 @@ To install the package, clone this repository into your workspace:
 
 ```
 cd catkin_ws/src
-git clone git@github.com:jeffdelmerico/cyphy-elas-ros.git
+git clone https://github.com/Nekhera/cyphy-elas-ros-arm.git
 ```
 
 Then build the `libelas` and `elas_ros` packages:
